@@ -40,5 +40,75 @@ class Point3D extends Point {
 # 오버로딩 ( OverLoading)
   - 오버로딩이란?
     기존에 없는 새로운 메서드를 정의하는 것
+    클래스에 메서드를 정의할 때 같은 이름이지만 서로 다른 매개변수의 형식을 가지고 있는, 메서드를 여러개를 정의할 수 있는 방법
+ 
+ ```
+
+c1.setOprands(10, 20, 30);
+
+public void setOprands(int left, int right, int third) {
+  this.left = left;
+  this.right = right;
+  this.third = third;
+}
+```
+// 두 개의 매개변수를 받기위해서는 두 개의 매개변수를 받는 이름이 다른 메서드를 선언해서 사용해야 한다.
+
+```
+    c1.setOprands(10, 20);
+    //...
+    //...
+```    
+    
+// 오버로딩을 사용하면 매개변수의 타입이나 갯수가 다른 같은 이름의 메서드를 사용할 수 있다 (더 깔끔한 코딩으로 바뀜)
+
+```
+package org.opentutorials.javatutorials.overloading.example;
+
+calss Calcultor {
+  it left, right;
+  int third = 0;
+  
+  public void setOprands(int left, int right) {
+    System.out.println("setOprands(int left, int right)");
+    this.left = left;
+    this.right = right;
+  }
+  
+  public void setOprands(int left, int right, int third) {
+    this.setOprands(left, right);            
+    
+    System.out.println("setOprands(int left, int right, int third)");
+    this.third = third;
+  }
+
+  public void sum() {
+    System.out.println(this.left + this.right + this.third);
+  }
+  
+  public void avg() {
+    System.out.println((this.left + this.right + this.third)/2);
+  }
+ 
+}
+
+public class CalculatorDemo {
+  public static void main (String [] args) {
+    Calculator c1 = new Calculator();
+    c1.setOprands(10, 20);
+    c1.sum();
+    c1.avg();
+    c1.setOprands(10, 20, 30);
+    c1.sum();
+    c1.avg();
+  }
+  
+}
+
+```
+
+// 오버로딩을 사용하지 않는다면 사용자는 필요한 매개변수의 메서드명을 기억하고 이를 맞게 사용해야 하는 수고로움이 있다.
+
+
 
 
