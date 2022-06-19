@@ -132,7 +132,7 @@ class Belllake extends Member {
 
 class Overriding {
 
-  publicl static void main(String [] args) {
+  public static void main(String [] args) {
     Member member = new Member();
     
     Noohki noohki = new Noohki();
