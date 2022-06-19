@@ -7,7 +7,7 @@
     기존에 없는 새로운 메서드를 정의하는 것
     클래스에 메서드를 정의할 때 같은 이름이지만 서로 다른 매개변수의 형식을 가지고 있는, 메서드를 여러개를 정의할 수 있는 방법
  
- ```
+ ```java
 
 public class Calculation1 {
   public void add1 (int i, int j) {
@@ -48,7 +48,7 @@ class Overloading1 {
 // 두 개의 매개변수를 받기위해서는 두 개의 매개변수를 받는 이름이 다른 메서드를 선언해서 사용해야 한다    
 // 오버로딩을 사용하면 매개변수의 타입이나 갯수가 다른 같은 이름의 메서드를 사용할 수 있다 (더 깔끔한 코딩으로 바뀜)
 
-```
+```java
 
 public class Calculation {
   public void add (int i, int j) {
@@ -95,7 +95,7 @@ class Overloading1 {
     조상 클래스로부터 상속받은 메서드의 내용을 변경하는 것을 오버라이딩이라고 한다. 
     상속받은 메서드를 그대로 사용하기도 하지만, 자손 클래스 자신에 맞게 변경해야하는 경우가 많은데, 이럴 때 조상의 메서드를 오버라이딩 한다.
     
-```
+```java
 class Member {
   public void age() {
     System.out.println("나이는 몇살입니다.");
@@ -128,7 +128,7 @@ class Belllake extends Member {
 
 ```
 
-```
+```java
 
 class Overriding {
 
