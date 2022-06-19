@@ -1,6 +1,8 @@
 
 
 # 오버로딩 ( OverLoading)
+  To put too many things in or on something
+
   - 오버로딩이란?
     기존에 없는 새로운 메서드를 정의하는 것
     클래스에 메서드를 정의할 때 같은 이름이지만 서로 다른 매개변수의 형식을 가지고 있는, 메서드를 여러개를 정의할 수 있는 방법
